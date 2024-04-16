@@ -88,12 +88,8 @@ async function FormSubmit(event) {
     loaderElement.classList.replace("loader", "hidden");
     
 };
-
-
-
 async function loadMore() {
     page += 1;
-    
     try {
         const data = await objGallery(page, names);
        maxPage = Math.ceil(data.totalHits / 15);
