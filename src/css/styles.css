@@ -22,13 +22,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.request-input {
-  display: flex;
-  gap: 8px;
-  padding-top: 24px;
-  justify-content: center;
-  margin-bottom: 32px;
-}
+
 .input-title {
   font-family: var(--font-family);
   font-weight: 400;
