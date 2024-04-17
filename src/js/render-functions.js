@@ -1,13 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-
 export const galleryElem = document.querySelector(".gallery");
-const lightBox = new SimpleLightbox('.gallery a', 
-{ 
-  captionDelay: 250,
-  captionsData: 'alt',
-});
-
 export function mageTemplate(data) {
      const markup = data.hits
     .map(({
@@ -37,7 +30,11 @@ export function mageTemplate(data) {
     })
     .join("");
     galleryElem.insertAdjacentHTML("beforeend", markup); 
- 
+    const lightBox = new SimpleLightbox('.gallery a', 
+    { 
+      captionDelay: 250,
+      captionsData: 'alt',
+    });
     lightBox.refresh(); 
    
     };
