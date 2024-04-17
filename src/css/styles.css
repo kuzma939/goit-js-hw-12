@@ -72,7 +72,7 @@
 .start-btn:hover {
   background-color: #6c8cff;
 }
-.gallery-nav {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
